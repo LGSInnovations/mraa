@@ -147,6 +147,7 @@ mraa_joule_expansion_board()
 
     int pos = 0;
 
+    // Pin 0
     strncpy(b->pins[pos].name, "INVALID", 8);
     b->pins[pos].capabilities = (mraa_pincapabilities_t){ 0, 0, 0, 0, 0, 0, 0, 0 };
     pos++;
@@ -177,6 +178,7 @@ mraa_joule_expansion_board()
     b->pins[pos].gpio.mux_total = 0;
     pos++;
 
+    // Pin 5
     strncpy(b->pins[pos].name, "19.2mhz", 8);
     b->pins[pos].capabilities = (mraa_pincapabilities_t){ 1, 1, 0, 0, 0, 0, 0, 0 };
     b->pins[pos].gpio.pinmap = 356;
@@ -440,6 +442,7 @@ mraa_joule_expansion_board()
     b->pins[pos].capabilities = (mraa_pincapabilities_t){ 1, 0, 0, 0, 0, 0, 0, 0 };
     pos++;
 
+    // Pin 45
     strncpy(b->pins[pos].name, "GND", 8);
     b->pins[pos].capabilities = (mraa_pincapabilities_t){ 1, 0, 0, 0, 0, 0, 0, 0 };
     pos++;
@@ -485,6 +488,7 @@ mraa_joule_expansion_board()
     b->pins[pos].capabilities = (mraa_pincapabilities_t){ 1, 0, 0, 0, 0, 0, 0, 0 };
     pos++;
 
+    // Pin 55
     strncpy(b->pins[pos].name, "PANEL", 8);
     b->pins[pos].capabilities = (mraa_pincapabilities_t){ 1, 1, 0, 0, 0, 0, 0, 0 };
     b->pins[pos].gpio.pinmap = 271;
@@ -617,6 +621,7 @@ mraa_joule_expansion_board()
     b->pins[pos].uart.mux_total = 0;
     pos++;
 
+    // Pin 75
     strncpy(b->pins[pos].name, "I2C2SDA", 8);
     b->pins[pos].capabilities = (mraa_pincapabilities_t){ 1, 0, 0, 0, 0, 1, 0, 0 };
     b->pins[pos].gpio.pinmap = 319;
@@ -666,30 +671,56 @@ mraa_joule_expansion_board()
     b->pins[pos].uart.mux_total = 0;
     pos++;
 
+    strncpy(b->pins[pos].name, "GPIO_4", 8);
+    b->pins[pos].capabilities = (mraa_pincapabilities_t){ 1, 1, 0, 0, 0, 0, 0, 0 };
+    b->pins[pos].gpio.pinmap = 341;
+    b->pins[pos].gpio.mux_total = 0;
+    pos++;
+
+    strncpy(b->pins[pos].name, "GPIO_5", 8);
+    b->pins[pos].capabilities = (mraa_pincapabilities_t){ 1, 1, 0, 0, 0, 0, 0, 0 };
+    b->pins[pos].gpio.pinmap = 342;
+    b->pins[pos].gpio.mux_total = 0;
+    pos++;
+
+    strncpy(b->pins[pos].name, "GPIO_6", 8);
+    b->pins[pos].capabilities = (mraa_pincapabilities_t){ 1, 1, 0, 0, 0, 0, 0, 0 };
+    b->pins[pos].gpio.pinmap = 343;
+    b->pins[pos].gpio.mux_total = 0;
+    pos++;
+
+    strncpy(b->pins[pos].name, "GPIO_22", 8);
+    b->pins[pos].capabilities = (mraa_pincapabilities_t){ 1, 1, 0, 0, 0, 0, 0, 0 };
+    b->pins[pos].gpio.pinmap = 451;
+    b->pins[pos].gpio.mux_total = 0;
+    pos++;
+
+
     while (pos != 100) {
         b->pins[pos].capabilities = (mraa_pincapabilities_t){ 0, 0, 0, 0, 0, 0, 0, 0 };
         pos++;
     }
 
-    strncpy(b->pins[pos].name, "LED100", 8);
+    // PIN 100
+    strncpy(b->pins[pos].name, "GPIO_0", 8);
     b->pins[pos].capabilities = (mraa_pincapabilities_t){ 1, 1, 0, 0, 0, 0, 0, 0 };
     b->pins[pos].gpio.pinmap = 337;
     b->pins[pos].gpio.mux_total = 0;
     pos++;
 
-    strncpy(b->pins[pos].name, "LED101", 8);
+    strncpy(b->pins[pos].name, "GPIO_1", 8);
     b->pins[pos].capabilities = (mraa_pincapabilities_t){ 1, 1, 0, 0, 0, 0, 0, 0 };
     b->pins[pos].gpio.pinmap = 338;
     b->pins[pos].gpio.mux_total = 0;
     pos++;
 
-    strncpy(b->pins[pos].name, "LED102", 8);
+    strncpy(b->pins[pos].name, "GPIO_2", 8);
     b->pins[pos].capabilities = (mraa_pincapabilities_t){ 1, 1, 0, 0, 0, 0, 0, 0 };
     b->pins[pos].gpio.pinmap = 339;
     b->pins[pos].gpio.mux_total = 0;
     pos++;
 
-    strncpy(b->pins[pos].name, "LED103", 8);
+    strncpy(b->pins[pos].name, "GPIO_3", 8);
     b->pins[pos].capabilities = (mraa_pincapabilities_t){ 1, 1, 0, 0, 0, 0, 0, 0 };
     b->pins[pos].gpio.pinmap = 340;
     b->pins[pos].gpio.mux_total = 0;
