@@ -13,6 +13,10 @@ build/
 *.swo
 *~
 
+cscope.files
+cscope.out
+tags
+
 # npmpub files
 src/mraajsJAVASCRIPT_wrap.cxx
 src/version.c
